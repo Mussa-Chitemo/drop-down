@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="index.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+     <title>Dropdwon</title>
+     <style>
+
+          /* style the way you like this button  */
+          .dropdown-btn {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               padding: 8px 10px;
+               color: white;
+               background: blue;
+               border: none;
+               font-size: 1.2rem;
+               text-transform: capitalize;
+               cursor: pointer;
+          }
+
+
+          /* use position relative to the container  */
+          .container {
+               position: relative;
+               display: inline-block;
+               overflow: hidden; /*it will hide the ancor tag width*/
+          }
+
+
+          /* use display none to the content the you will use display block while hover  */
+          .content {
+               background: grey;
+               display: none;
+          }
+
+          .content ul {
+               list-style: none;
+               margin: 0px;
+               padding: 0px;
+          }
+          .content li {
+               margin: 0px;
+               padding: 0px;
+          }
+          .content a {
+               text-transform: capitalize;
+               text-align: center;
+               display: inline-block;
+               width: 100%;
+               text-decoration: none;
+               padding: 10px 4px;
+               margin: 0px;
+          }
+          .content a:hover {
+               background: white;
+          }
+
+
+          /* then use display block to displace the content conatiner  */
+          .container:hover .content {
+               display: block;
+               margin-top: 2px;
+          }
+
+          body {
+               background: rgba(245, 245, 245, 0.473);
+          }
+         
+     </style>
+    
+</head>
+<body>
+    <div class="container">
+      <button class="dropdown-btn">dropdown <span class="material-symbols-outlined">arrow_drop_down</span></button>
+      <div class="content">
+          <ul>
+               <li><a href="">item1</a></li>
+               <li><a href="">item2</a></li>
+               <li><a href="">item3</a></li>
+               <li><a href="">item4</a></li>
+          </ul>
+      </div>
+    </div>
+
+    <!-- <script src="index.js"> </script> -->
+</body>
+</html>
